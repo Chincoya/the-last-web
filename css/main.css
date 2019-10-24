@@ -19,13 +19,40 @@ body, button, input, textarea {
   font-size: 1.4rem;
 }
 
+.shentox {
+  font-family: Shentox, Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.009rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 .main-header {
   display: flex;
   width: 100%;
 }
 
 .logo-box {
+  display: none;
+  align-items: center;
+  justify-content: center;
   width: 10.6rem;
+  min-width: 10.6rem;
+  height: 8rem;
+  background: rgb(214,0,238);
+  background: linear-gradient(158deg, rgba(214,0,238,1) 2%, rgba(196,0,0,1) 37%, rgba(191,88,0,1) 82%);
+}
+
+@media screen and (max-width: 1024px) {
+  .logo-box {
+    display: flex;
+  }
+}
+
+.logo-box-link {
+  height: 2rem;
+  width: 80%;
 }
 
 .navbars-box {
@@ -72,13 +99,10 @@ body, button, input, textarea {
   margin-right: 2rem;
 }
 
-.shentox {
-  font-family: Shentox, Arial, sans-serif;
-  font-size: 1.3rem;
-  font-weight: bold;
-  letter-spacing: 0.009rem;
-  line-height: 1;
-  text-transform: uppercase;
+@media screen and (max-width: 832px) {
+  .about-nav {
+    display: none;
+  }
 }
 
 .subject-nav-link {
@@ -93,4 +117,19 @@ body, button, input, textarea {
   font-size: 1.6rem;
   padding: 16px 0;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .black-nav,
+  .subject-nav {
+    display: none;
+  }
+
+  .header-nav {
+    justify-content: flex-end;
+  }
+
+  .logo-box {
+    height: 4.8rem;
+  }
 }
