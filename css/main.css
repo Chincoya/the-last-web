@@ -155,3 +155,18 @@ textarea {
     display: initial;
   }
 }
+
+.breaking-news-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.important-news-box {
+  width: 44.3rem;
+  height: 21.7rem;
+  background-color: black;
+}
+
+.main {
+  margin: 0.9rem 0.9rem 0 0.9rem;
+}
