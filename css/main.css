@@ -157,16 +157,39 @@ textarea {
 }
 
 .breaking-news-box {
-  display: flex;
-  justify-content: space-between;
+  height: 60vh;
+  padding: 0.45rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .breaking-news-box {
+    height: 75vh;
+    max-height: 56rem;
+  }
 }
 
 .important-news-box {
-  width: 44.3rem;
-  height: 21.7rem;
-  background-color: black;
+  float: left;
+  background-image: url("../img/robot-google.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0.45rem;
+  height: calc(50% - 0.45rem);
+  width: calc(35% - 0.9rem);
 }
 
-.main {
-  margin: 0.9rem 0.9rem 0 0.9rem;
+.important-news-box:first-child {
+  height: 100%;
+  width: calc(65% - 0.9rem);
+}
+
+@media screen and (max-width:767px) {
+  .breaking-news-box {
+    height: 100vh;
+  }
+
+  .important-news-box {
+    width: 100%;
+    height: 33%;
+  }
 }
