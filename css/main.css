@@ -110,13 +110,28 @@ body, button, input, textarea {
   color: #aaa;
 }
 
-.search-icon {
+.search-icon-link,
+.menu-icon-link {
   border-left: 1px solid #aaaaaa2b;
   height: 4.8rem;
-  width: 4.8rem;
+  min-width: 4.8rem;
   font-size: 1.6rem;
   padding: 16px 0;
   text-align: center;
+  transform: scaleX(-1);
+}
+
+.search-icon-link:hover {
+  color: black;
+}
+
+.menu-icon-link {
+  display: none;
+  color: #ff4422;
+}
+
+.menu-buttons {
+  display: flex;
 }
 
 @media screen and (max-width: 767px) {
@@ -131,5 +146,9 @@ body, button, input, textarea {
 
   .logo-box {
     height: 4.8rem;
+  }
+
+  .menu-icon-link {
+    display: initial;
   }
 }
