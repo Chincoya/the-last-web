@@ -14,7 +14,10 @@ body {
   background-color: #f1f1f1;
 }
 
-body, button, input, textarea {
+body,
+button,
+input,
+textarea {
   font-family: Helvetica,Arial,sans-serif;
   font-size: 1.4rem;
 }
@@ -40,7 +43,7 @@ body, button, input, textarea {
   width: 10.6rem;
   min-width: 10.6rem;
   height: 8rem;
-  background: rgb(214,0,238);
+  background: rgb(214, 0, 238);
   background: linear-gradient(158deg, rgba(214,0,238,1) 2%, rgba(196,0,0,1) 37%, rgba(191,88,0,1) 82%);
 }
 
@@ -127,7 +130,7 @@ body, button, input, textarea {
 
 .menu-icon-link {
   display: none;
-  color: #ff4422;
+  color: #f42;
 }
 
 .menu-buttons {
