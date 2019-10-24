@@ -14,8 +14,21 @@ body {
   background-color: #f1f1f1;
 }
 
+body, button, input, textarea {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+}
+
 .main-header {
-  display: block;
+  display: flex;
+  width: 100%;
+}
+
+.logo-box {
+  width: 10.6rem;
+}
+
+.navbars-box {
   width: 100%;
 }
 
@@ -59,11 +72,16 @@ body {
   margin-right: 2rem;
 }
 
-.subject-nav-link {
-  font-size: 1.6rem;
-  line-height: 1;
+.shentox {
+  font-family: Shentox, Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
   letter-spacing: 0.009rem;
+  line-height: 1;
   text-transform: uppercase;
+}
+
+.subject-nav-link {
   padding: 0 1.2rem;
   color: #aaa;
 }
