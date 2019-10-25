@@ -11,8 +11,8 @@ html {
 }
 
 :root {
-  --black-gradient: linear-gradient(0deg, rgba(0,0,0,0.9093838218881303) 7%, rgba(0,0,0,0.12787121684611347) 59%);
-  --red-gradient: linear-gradient(145deg, rgba(249,30,0,0.8197479675463936) 0%, rgba(249,30,0,0) 58%);
+  --black-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.9093838218881303) 7%, rgba(0, 0, 0, 0.12787121684611347) 59%);
+  --red-gradient: linear-gradient(145deg, rgba(249, 30, 0, 0.8197479675463936) 0%, rgba(249, 30, 0, 0) 58%);
 }
 
 body {
@@ -48,8 +48,8 @@ textarea {
   width: 10.6rem;
   min-width: 10.6rem;
   height: 8rem;
-  background: rgb(109,0,195);
-background: linear-gradient(158deg, rgba(109,0,195,0.8841737378545168) 0%, rgba(214,26,0,1) 20%, rgba(214,26,0,0.94859950816264) 80%, rgba(223,144,0,1) 99%);
+  background: rgb(109, 0, 195);
+  background: linear-gradient(158deg, rgba(109, 0, 195, 0.8841737378545168) 0%, rgba(214, 26, 0, 1) 20%, rgba(214, 26, 0, 0.94859950816264) 80%, rgba(223, 144, 0, 1) 99%);
 }
 
 @media screen and (max-width: 1024px) {
@@ -120,11 +120,11 @@ background: linear-gradient(158deg, rgba(109,0,195,0.8841737378545168) 0%, rgba(
 
 .search-icon-link,
 .menu-icon-link {
-  border-left: 1px solid #aaaaaa2b;
+  border-left: 0.1rem solid #aaaaaa2b;
   height: 4.8rem;
   min-width: 4.8rem;
   font-size: 1.6rem;
-  padding: 16px 0;
+  padding: 1.6rem 0;
   text-align: center;
   transform: scaleX(-1);
 }
@@ -206,7 +206,7 @@ background: linear-gradient(158deg, rgba(109,0,195,0.8841737378545168) 0%, rgba(
   width: calc(65% - 0.9rem);
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .breaking-news-box {
     display: flex;
     flex-direction: column;
@@ -263,20 +263,36 @@ background: linear-gradient(158deg, rgba(109,0,195,0.8841737378545168) 0%, rgba(
 
 @media screen and (max-width: 1023px) {
   .news-box-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .important-news-box:first-child .news-box-title {
     font-size: 4rem;
   }
+  
+  .news-box-details {
+    font-size: 1.2rem;
+  }
+  
+  .important-news-box:nth-child(n+2) .news-share-counter{
+    display: none;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  .news-box-title {
+@media screen and (max-width: 767px) {
+  .important-news-box:first-child .news-box-title {
     font-size: 1.8rem;
   }
 
-  .news-box-details {
-    font-size: 13px;
+  .important-news-box:nth-child(n+2) .news-share-counter{
+    display: initial;
   }
+
+  .news-box-title {
+    font-size: 1.8rem;
+  }
+}
+
+.icon-ml {
+  margin-left: 0.6rem;
 }
