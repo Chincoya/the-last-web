@@ -175,7 +175,6 @@ textarea {
   font-size: 50px;
 }
 
-
 @media screen and (max-width: 1600px) {
   .breaking-news-box {
     height: 75vh;
@@ -229,12 +228,12 @@ textarea {
     max-height: 100vh;
   }
 
-  .important-news-box:first-child {
+  .important-news-box {
     height: 33%;
     width: calc(100% - 0.9rem);
   }
 
-  .important-news-box {
+  .important-news-box:first-child {
     height: 33%;
     width: calc(100% - 0.9rem);
   }
@@ -243,8 +242,8 @@ textarea {
 @media screen and (max-width: 1024px) {
   .important-news-box:first-child {
     background-image:
-    var(--black-gradient),
-    url("../img/robot-google.png");
+      var(--black-gradient),
+      url("../img/robot-google.png");
   }
 }
 
@@ -267,7 +266,7 @@ textarea {
 }
 
 .news-box-details {
-  color: hsla(0,0%,100%,.6);
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 .news-author-link {
@@ -288,22 +287,22 @@ textarea {
     font-size: 1.2rem;
   }
 
-  .important-news-box:nth-child(n+2) .news-share-counter{
+  .important-news-box:nth-child(n+2) .news-share-counter {
     display: none;
   }
 }
 
 @media screen and (max-width: 767px) {
+  .news-box-title {
+    font-size: 1.8rem;
+  }
+  
   .important-news-box:first-child .news-box-title {
     font-size: 1.8rem;
   }
 
-  .important-news-box:nth-child(n+2) .news-share-counter{
+  .important-news-box:nth-child(n+2) .news-share-counter {
     display: initial;
-  }
-
-  .news-box-title {
-    font-size: 1.8rem;
   }
 }
 
