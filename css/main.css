@@ -167,6 +167,15 @@ textarea {
   max-height: 56rem;
 }
 
+.news-box-title {
+  font-size: 24px;
+}
+
+.important-news-box:first-child .news-box-title {
+  font-size: 50px;
+}
+
+
 @media screen and (max-width: 1600px) {
   .breaking-news-box {
     height: 75vh;
@@ -274,11 +283,11 @@ textarea {
   .important-news-box:first-child .news-box-title {
     font-size: 4rem;
   }
-  
+
   .news-box-details {
     font-size: 1.2rem;
   }
-  
+
   .important-news-box:nth-child(n+2) .news-share-counter{
     display: none;
   }
