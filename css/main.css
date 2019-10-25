@@ -10,6 +10,11 @@ html {
   font-size: 62.5%;
 }
 
+:root {
+  --black-gradient: linear-gradient(0deg, rgba(0,0,0,0.9093838218881303) 7%, rgba(0,0,0,0.12787121684611347) 59%);
+  --red-gradient: linear-gradient(145deg, rgba(249,30,0,0.8197479675463936) 0%, rgba(249,30,0,0) 58%);
+}
+
 body {
   background-color: #f1f1f1;
 }
@@ -159,26 +164,25 @@ background: linear-gradient(158deg, rgba(109,0,195,0.8841737378545168) 0%, rgba(
 .breaking-news-box {
   height: 60vh;
   padding: 0.45rem;
+  max-height: 56rem;
+}
+
+@media screen and (max-width: 1600px) {
+  .breaking-news-box {
+    height: 75vh;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .breaking-news-box {
-    height: 75vh;
-    max-height: 56rem;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  .breaking-news-box {
-    height: 75vh;
-    max-height: 56rem;
+    height: 60vh;
   }
 }
 
 .important-news-box {
   float: left;
   background-image:
-    linear-gradient(0deg, rgba(0,0,0,0.8001401244091386) 25%, rgba(0,0,0,0.3491597322522759) 100%),
+    var(--black-gradient),
     url("../img/robot-google.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,8 +199,8 @@ background: linear-gradient(158deg, rgba(109,0,195,0.8841737378545168) 0%, rgba(
 
 .important-news-box:first-child {
   background-image:
-    linear-gradient(0deg, rgba(0,0,0,0.8001401244091386) 25%, rgba(0,0,0,0.3491597322522759) 100%),
-    linear-gradient(145deg, rgba(249,30,0,0.8197479675463936) 0%, rgba(249,30,0,0) 58%), 
+    var(--black-gradient),
+    var(--red-gradient),
     url("../img/robot-google.png");
   height: 100%;
   width: calc(65% - 0.9rem);
@@ -209,6 +213,7 @@ background: linear-gradient(158deg, rgba(109,0,195,0.8841737378545168) 0%, rgba(
     padding: 0 0.45rem 0 0.45rem;
     justify-content: space-around;
     height: calc(100vh - 5.16rem);
+    max-height: 100vh;
   }
 
   .important-news-box:first-child {
@@ -224,9 +229,8 @@ background: linear-gradient(158deg, rgba(109,0,195,0.8841737378545168) 0%, rgba(
 
 @media screen and (max-width: 1024px) {
   .important-news-box:first-child {
-    background-image: 
-    linear-gradient(0deg, rgba(0,0,0,0.8001401244091386) 25%, rgba(0,0,0,0.3491597322522759) 100%),
-    linear-gradient(0deg, rgba(0,0,0,0.8197479675463936) 0%, rgba(0,0,0,0) 67%),
+    background-image:
+    var(--black-gradient),
     url("../img/robot-google.png");
   }
 }
@@ -257,19 +261,22 @@ background: linear-gradient(158deg, rgba(109,0,195,0.8841737378545168) 0%, rgba(
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
-  .breaking-news-box {
-    height: 58.5vh;
+@media screen and (max-width: 1023px) {
+  .news-box-title {
+    font-size: 2rem;
   }
 
-  h2 {
+  .important-news-box:first-child .news-box-title {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news-box-title {
     font-size: 1.8rem;
   }
 
   .news-box-details {
     font-size: 13px;
   }
-}
-
-@media screen and (min-width: 1023px) {
 }
