@@ -171,6 +171,10 @@ textarea {
   .breaking-news-box {
     height: 75vh;
   }
+
+  .important-news-box:first-child .news-box-title {
+    font-size: 4.9rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -248,6 +252,7 @@ textarea {
     display: none;
   }
 }
+
 .news-banner-svg {
   width: 50%;
 }
