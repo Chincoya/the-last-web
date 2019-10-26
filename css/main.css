@@ -309,3 +309,105 @@ textarea {
 .icon-ml {
   margin-left: 0.6rem;
 }
+
+.latest-news-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem auto 0 auto;
+  padding: 0 0.8rem;
+  width: 100%;
+  max-width: 119.4rem;
+}
+
+.latest-news-h-box {
+  padding: 0 1.3rem;
+  width: 100%;
+}
+
+.latest-news-header {
+  color: #f42;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.latest-news-header:hover {
+  color: black;
+}
+
+.latest-news-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.latest-news-article {
+  display: flex;
+  width: 25%;
+  min-width: 25%;
+  padding: 1.3rem 1.15rem 1rem 1.15rem;
+}
+
+.latest-news-container {
+  position: relative;
+}
+
+.latest-news-img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.latest-news-title {
+  display: block;
+  font-size: 1.7rem;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 0.6rem;
+}
+
+.latest-news-title:hover {
+  color: #f42;
+}
+
+@media screen and (max-width: 1024px) {
+  .latest-news-article {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .latest-news-article {
+    width: 100%;
+  }
+
+  .latest-news-container {
+    display: flex;
+  }
+
+  .latest-news-img {
+    margin-right: 1.4rem;
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  .latest-news-title {
+    font-size: 1.5rem;
+  }
+}
+
+.latest-news-details {
+  font-size: 1.3rem;
+  color: #aaa;
+}
+
+.latest-news-link {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.latest-news-link:hover {
+  color: grey;
+}
