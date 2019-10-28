@@ -390,7 +390,6 @@ textarea {
   background-color: var(--stone);
 }
 
-
 @media screen and (max-width: 767px) {
   .latest-news-article {
     width: 100%;
