@@ -384,6 +384,10 @@ textarea {
   }
 }
 
+.index-desc-box {
+  padding-bottom: 6.2rem;
+}
+
 @media screen and (max-width: 767px) {
   .latest-news-article {
     width: 100%;
@@ -401,6 +405,10 @@ textarea {
 
   .latest-news-title {
     font-size: 1.5rem;
+  }
+
+  .index-desc-box {
+    padding-bottom: 0;
   }
 }
 
@@ -468,6 +476,10 @@ textarea {
 }
 
 @media screen and (max-width: 1024px) {
+  .index-news-h-box {
+    display: initial;
+  }
+
   .index-co-news-box .latest-news-article:last-child {
     display: none;
   }
@@ -574,7 +586,7 @@ textarea {
   .index-co-items {
     display: initial;
   }
-  
+
   .index-co-items li {
     padding-left: 0;
     min-width: 100%;
