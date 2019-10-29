@@ -819,7 +819,7 @@ textarea {
 
 .deal-percentage-box {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: absolute;
   top: 1rem;
@@ -828,13 +828,15 @@ textarea {
   width: 8.6rem;
   height: 8.6rem;
   background-color: var(--light-yellow);
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
 
 .deal-percentage {
   font-size: 2rem;
   font-weight: bold;
-  color: #fff;
+  color: black;
   transform: rotate(45deg);
+  padding-bottom: 0.5rem;
 }
 
 .deal-title {
