@@ -869,6 +869,7 @@ textarea {
 
   .deal-item-box {
     display: flex;
+    min-width: 100%;
   }
 
   .deal-img {
@@ -878,5 +879,9 @@ textarea {
 
   .deal-percentage-box {
     display: none;
+  }
+
+  .details-box {
+    margin-left: 1.7rem;
   }
 }
