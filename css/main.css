@@ -946,15 +946,12 @@ textarea {
   background-color: black;
   color: var(--silver);
   font-size: 13px;
+  padding: 3.9rem 2rem;
+  text-align: center;
 }
 
 .footer-svg-img img {
   height: 9px;
-}
-
-.footer-legal {
-  padding: 3.9rem 2rem;
-  text-align: center;
 }
 
 .footer-legal-heart {
@@ -962,9 +959,9 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
-    .footer-legal span {
-      display: inline-block;
-      text-align: center;
-      width: 100%;
-    }
+  .footer-legal span {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
 }
