@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
-    <style>@font-face {font-family: "Shentox";src: url("./fonts/Shentox.eot"); /* IE9 Compat Modes */ src: url("./fonts/Shentox.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("./fonts/Shentox.otf") format("opentype"), /* Open Type Font */ url("./fonts/Shentox.svg") format("svg"), /* Legacy iOS */ url("./fonts/Shentox.ttf") format("truetype"), /* Safari, Android, iOS */ url("./fonts/Shentox.woff") format("woff"), /* Modern Browsers */ url("./fonts/Shentox.woff2") format("woff2"); /* Modern Browsers */ font-weight: normal;font-style: normal;}</style>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preload" href="js/scripts.js" as="script">
     <title>The Next Web</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header" id="main-header">
       <div class="logo-box">
         <a class ="logo-box-link" href="#">
           <img class="logo-img" src="./img/tnw.svg" alt="The Next Web">
         </a>
       </div>
       <div class="navbars-box">
-        <nav class="header-nav black-nav">
+        <nav class="header-nav black-nav" id="black-nav">
           <ul class="terms-nav">
             <li class="terms-nav-item"><a href="#" class="terms-nav-link">Events</a></li>
             <li class="terms-nav-item"><a href="#" class="terms-nav-link">Bussiness</a></li>
@@ -678,5 +678,6 @@
         <span>Powered by <a href="#" class="footer-svg-img"><img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg" alt="Stackpath"></a></span>
       </div>
     </footer>
+    <script language="javascript" src="js/scripts.js"></script>
   </body>
 </html>
