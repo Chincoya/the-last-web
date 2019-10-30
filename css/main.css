@@ -10,6 +10,19 @@ html {
   font-size: 62.5%;
 }
 
+@font-face {
+  font-family: "Shentox";
+  src: url("./fonts/Shentox.eot");
+  src: url("./fonts/Shentox.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Shentox.otf") format("opentype"),
+    url("./fonts/Shentox.svg") format("svg"),
+    url("./fonts/Shentox.ttf") format("truetype"),
+    url("./fonts/Shentox.woff") format("woff"),
+    url("./fonts/Shentox.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --black-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.9093838218881303) 7%, rgba(0, 0, 0, 0.12787121684611347) 59%);
   --red-gradient: linear-gradient(145deg, rgba(249, 30, 0, 0.8197479675463936) 0%, rgba(249, 30, 0, 0) 58%);
