@@ -2,12 +2,12 @@
   font-family: "Shentox";
   src: url("./fonts/Shentox.eot");
   src:
-  url("./fonts/Shentox.eot?#iefix") format("embedded-opentype"),
-  url("./fonts/Shentox.otf") format("opentype"),
-  url("./fonts/Shentox.svg") format("svg"),
-  url("./fonts/Shentox.ttf") format("truetype"),
-  url("./fonts/Shentox.woff") format("woff"),
-  url("./fonts/Shentox.woff2") format("woff2");
+    url("./fonts/Shentox.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Shentox.otf") format("opentype"),
+    url("./fonts/Shentox.svg") format("svg"),
+    url("./fonts/Shentox.ttf") format("truetype"),
+    url("./fonts/Shentox.woff") format("woff"),
+    url("./fonts/Shentox.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
