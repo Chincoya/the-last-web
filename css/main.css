@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Shentox";
+  src: url("./fonts/Shentox.eot");
+  src:
+    url("./fonts/Shentox.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Shentox.otf") format("opentype"),
+    url("./fonts/Shentox.svg") format("svg"),
+    url("./fonts/Shentox.ttf") format("truetype"),
+    url("./fonts/Shentox.woff") format("woff"),
+    url("./fonts/Shentox.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 *::after,
 *::before {
@@ -70,7 +84,6 @@ textarea {
   justify-content: center;
   width: 10.6rem;
   min-width: 10.6rem;
-  height: 8rem;
   background: rgb(109, 0, 195);
   background: linear-gradient(158deg, rgba(109, 0, 195, 0.8841737378545168) 0%, rgba(214, 26, 0, 1) 20%, rgba(214, 26, 0, 0.94859950816264) 80%, rgba(223, 144, 0, 1) 99%);
 }
@@ -175,13 +188,15 @@ textarea {
     justify-content: flex-end;
   }
 
-  .logo-box {
-    height: 4.8rem;
-  }
-
   .menu-icon-link {
     display: initial;
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 
 .breaking-news-box {
@@ -191,11 +206,11 @@ textarea {
 }
 
 .news-box-title {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .important-news-box:first-child .news-box-title {
-  font-size: 50px;
+  font-size: 5rem;
 }
 
 @media screen and (max-width: 1600px) {
@@ -301,7 +316,7 @@ textarea {
   color: var(--boyfriend);
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .news-box-title {
     font-size: 1.8rem;
   }
@@ -738,7 +753,7 @@ textarea {
 
 .subject-related-item {
   padding: 1rem 0;
-  border-bottom: 1px solid var(--silver);
+  border-bottom: 0.1rem solid var(--silver);
 }
 
 .subject-related-link {
@@ -792,7 +807,7 @@ textarea {
   justify-content: space-between;
   padding: 0 1.3rem;
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 .latest-deals-header {
@@ -868,7 +883,7 @@ textarea {
   text-decoration: line-through;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .deal-item-box {
     min-width: 33.33%;
   }
@@ -949,7 +964,7 @@ textarea {
 
 .footer-social-link:hover {
   background-color: var(--fair-grey);
-  border: 2px solid #333;
+  border: 0.2rem solid #333;
 }
 
 .footer-social-link i {
@@ -960,13 +975,13 @@ textarea {
 .footer-legal {
   background-color: black;
   color: var(--silver);
-  font-size: 13px;
+  font-size: 1.3rem;
   padding: 3.9rem 2rem;
   text-align: center;
 }
 
 .footer-svg-img img {
-  height: 9px;
+  height: 0.9rem;
 }
 
 .footer-legal-heart {
