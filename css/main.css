@@ -27,7 +27,8 @@ html {
 @font-face {
   font-family: "Shentox";
   src: url("./fonts/Shentox.eot");
-  src: url("./fonts/Shentox.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("./fonts/Shentox.eot?#iefix") format("embedded-opentype"),
     url("./fonts/Shentox.otf") format("opentype"),
     url("./fonts/Shentox.svg") format("svg"),
     url("./fonts/Shentox.ttf") format("truetype"),
